@@ -21,7 +21,7 @@
 
         self.pop = function(s)
         {
-            subscribers[s.id] = null;
+            delete subscribers[s.id];
         }
 
         self.push = function(s)
